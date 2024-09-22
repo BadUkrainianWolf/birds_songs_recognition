@@ -1,0 +1,5 @@
+Dataset was taking a huge amount of memory, so we uploaded it on external drive, which can be found here:
+
+https://unice-my.sharepoint.com/:f:/g/personal/mariia_berdnyk_etu_unice_fr/Epe0_WVF1-VLnntw3nqR-d0Bf40cHlMjUtMsXYJ3XlUEBg?e=SFzJmd
+
+You can try to run all code and download all the data hand-on. But it will take a day.
