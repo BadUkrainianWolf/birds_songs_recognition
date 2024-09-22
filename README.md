@@ -5,7 +5,7 @@
 Our project aims to identify bird songs from test files using a STM32L476RGT6 Microcontroller board. 
 For the project we selected these birds species:
 
-![Birds dataset](image-9.png)
+![Birds dataset](Report/image-9.png)
 
 **Goals**: 
 The project aimed to efficiently identify bird calls in multiple test files using a microphone for real-time recognition while playing back sound recordings, then display the results in the serial monitor console. We built our database by retrieving records using the Xeno-canto site API presented during the course to achieve this objective.
@@ -38,7 +38,7 @@ During the 10th step, the microcontroller was **sending the received data into t
  
 We finish the workflow with **Microcontroller evaluation** using the small dataset prepared in step 4. Additionally, we evaluated its performance by playing audio samples of bird songs and comparing the results.
 
-![Project workflow diagram](WorkFlow.png)
+![Project workflow diagram](Report/WorkFlow.png)
 
 ## Dataset & CNN model
 #### Dataset: 
@@ -86,7 +86,7 @@ Here are the key components of the architecture used in project:
 6. **LED Feedback**:
     * LEDs are used to provide feedback on the processing status. The LED is *turned on* during data preprocessing and prediction and *turned off* afterward.
 
-![Processing architecture Diagram](Architecture.png)
+![Processing architecture Diagram](Report/Architecture.png)
 
 ## Presentation of the results obtained, and the experimental setup to test the generalization of the training to real data (not the ones of the dataset)
 The obtained results from the tested datasets are as follows:
@@ -98,23 +98,23 @@ The obtained results from the tested datasets are as follows:
 
 Additionally, we validated the model's performance using real-world data by playing videos on YouTube featuring the evaluated birds. Initially, the model shows random predictions with low confidence levels. However, as the actual bird songs commenced, the model consistently identified the correct class multiple times in a raw with a high confidence level. The results are:
 
-![First class prediction](image-1.png)
+![First class prediction](Report/image-1.png)
 
-![Second class](image-2.png)
+![Second class](Report/image-2.png)
 
-![Third class](image.png)
+![Third class](Report/image.png)
 
-![Fourth class](image-3.png)
+![Fourth class](Report/image-3.png)
 
-![Fifth class](image-4.png)
+![Fifth class](Report/image-4.png)
 
-![Sixth class](image-5.png)
+![Sixth class](Report/image-5.png)
 
-![Seventh class](image-6.png)
+![Seventh class](Report/image-6.png)
 
-![Eighth class](image-7.png)
+![Eighth class](Report/image-7.png)
 
-![Ninth class](image-8.png)
+![Ninth class](Report/image-8.png)
 
 
 The model is confused between the *0th* and *3rd* classes due to the similarity in the songs of these bird species. Similarly, it encounters difficulty with the *8th* class, primarily because the bird squeaks are short and closely resemble other ambient sounds. Nevertheless, overall, the model delivers satisfactory results across all 10 classes. For further reference, the audio samples used for testing can be found in the ``TestRecords`` folder.
